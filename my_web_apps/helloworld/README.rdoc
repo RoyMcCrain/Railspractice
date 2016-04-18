@@ -9,6 +9,7 @@ Rails version 4.2.0.beta2
 
 
 一番小さなRailsアプリづくり
+
 http://igarashikuniaki.net/rails_textbook/smallest-app.html
 
 
