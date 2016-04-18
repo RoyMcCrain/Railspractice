@@ -8,8 +8,7 @@ Ruby version 2.3.0
 Rails version 4.2.0.beta2  
 
 
-一番小さなRailsアプリづくり  
-(http://igarashikuniaki.net/rails_textbook/smallest-app.html)
+[一番小さなRailsアプリづくり](http://igarashikuniaki.net/rails_textbook/smallest-app.html)
 
 
 メモ
@@ -92,11 +91,17 @@ helloworld              ←アプリ名のフォルダ
 
 Web Server
     Rails App
+    
         Routes      routes.rb  
-        ↓  
+        
+        ↓
+        
         Controller  hello_controller.rb indexアクション  
+        
         ↓  
+        
         View        hello/index.html.erb  
+
 ↓  
 
 レスポンス：HTML
@@ -121,10 +126,12 @@ Web Server
     リクエスト
     URL:https://localhost:3000/hello/index
     httpメソッド：GET
-    
-    ↓   *routesが持っている対応表を参照し、アクションを決定*
-
+    ↓
+     *routesが持っている対応表を参照し、アクションを決定*
+    ↓
     HelloControllerのindexアクション
     
+    ※routesからアクセスされるControllerのメソッドを「アクション」と呼ぶ
+----------------------------------------------------------------
     
     
