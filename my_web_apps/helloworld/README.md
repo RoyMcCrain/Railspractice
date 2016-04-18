@@ -164,17 +164,12 @@ Web Server
 処理を行い、次に処理を渡す  
 ファイルは'app/controllers/’に置く。
 
-routes
-
-↓
-
-### Controller:    コードを実行して@timeに代入
-
-*結果を渡すにはインスタンス変数を使う*
-
-↓
-
-View:        @timeの中身を表示する
+routes  
+↓  
+### Controller:    コードを実行して@timeに代入  
+*結果を渡すにはインスタンス変数を使う*  
+↓  
+View:        @timeの中身を表示する  
 
 ---
 
