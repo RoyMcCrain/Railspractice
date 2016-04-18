@@ -84,6 +84,7 @@ helloworld              ←アプリ名のフォルダ
 
 URLが/hello/indexであるページを表示するためのファイル群を生成
 
+
 helloworld              ←アプリ名のフォルダ
 
     app
@@ -112,15 +113,10 @@ helloworld              ←アプリ名のフォルダ
 Web Server
 
     Rails App
-    
         Routes      routes.rb  
-        
         ↓
-        
         Controller  hello_controller.rb indexアクション  
-        
         ↓  
-        
         View        hello/index.html.erb  
 
 ↓  
@@ -137,19 +133,14 @@ Web Server
 
     リクエストのURLとHTTPメソッドに応じて次に処理を行う"先"を
     決める。
-    
         URLは住所
-        
         HTTPメソッドは住所に対して行う処理を指示する。
-
             GETメソッドは「ページを取得する」
         
 よってroutesの処理は
 
     リクエスト   
-    
         URL:https://localhost:3000/hello/index  
-        
         httpメソッド：GET  
         
     ↓
