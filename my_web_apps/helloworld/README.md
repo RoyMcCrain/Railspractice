@@ -87,17 +87,17 @@ helloworld              ←アプリ名のフォルダ
 
 リクエスト
     URL:https://localhost:3000/hello/index
-    httpメソッド：GET
-↓
+    httpメソッド：GET  
+↓  
 
 Web Server
     Rails App
-        Routes      routes.rb
-        ↓
-        Controller  hello_controller.rb indexアクション
-        ↓
-        View        hello/index.html.erb
-↓
+        Routes      routes.rb  
+        ↓  
+        Controller  hello_controller.rb indexアクション  
+        ↓  
+        View        hello/index.html.erb  
+↓  
 
 レスポンス：HTML
 -----------------------------------------------------------------
