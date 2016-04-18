@@ -18,7 +18,11 @@ Rails version 4.2.0.beta2
 ## scaffoldコマンド
 
 g scaffoldコマンドは
-* 新規作成
-* 表示
-* 更新
-* 削除
+* 新規作成(Create)
+* 表示(Read)
+* 更新(Update)
+* 削除(Destroy)
+の機能を一度に作れる。
+
+
+### 四つの機能の頭文字をとって**GRUD**機能という
