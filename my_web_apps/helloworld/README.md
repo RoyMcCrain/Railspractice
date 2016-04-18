@@ -161,7 +161,7 @@ Web Server
 
 ## Controller
 
-処理を行い、次に処理を渡す　　
+処理を行い、次に処理を渡す  
 ファイルは'app/controllers/’に置く。
 
 routes
