@@ -11,11 +11,13 @@ Rails version 4.2.0.beta2
 
 
 はじめに
+
 http://igarashikuniaki.net/rails_textbook/preface.html
 
 〜
 
 Webアプリをまずはつくってみよう
+
 http://igarashikuniaki.net/rails_textbook/my-first-web-app.html
 
 メモ
