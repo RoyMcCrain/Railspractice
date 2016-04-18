@@ -11,3 +11,14 @@ Rails version 4.2.0.beta2
 
 
 # メモ
+
+
+---
+
+## scaffoldコマンド
+
+g scaffoldコマンドは
++新規作成
++表示
++更新
++削除
