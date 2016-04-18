@@ -18,7 +18,8 @@ Rails version 4.2.0.beta2
 ## scaffoldコマンド
 
 g scaffoldコマンドは
-*新規作成
-*表示
-*更新
-*削除
+
+* 新規作成  
+* 表示  
+* 更新  
+* 削除  
