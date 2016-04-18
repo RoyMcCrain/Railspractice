@@ -85,6 +85,7 @@ helloworld              ←アプリ名のフォルダ
 URLが/hello/indexであるページを表示するためのファイル群を生成
 
 helloworld              ←アプリ名のフォルダ
+
     app
         controllers     ←いろいろな処理を行う箇所
             hello_controller.rb
