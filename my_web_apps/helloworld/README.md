@@ -123,7 +123,7 @@ Web Server
     URL:https://localhost:3000/hello/index
     httpメソッド：GET
     
-    ↓   __routesが持っている対応表を参照し、アクションを決定__
+    ↓   *routesが持っている対応表を参照し、アクションを決定*
 
     HelloControllerのindexアクション
     
