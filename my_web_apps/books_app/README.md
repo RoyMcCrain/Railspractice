@@ -64,7 +64,7 @@ create(画面なし)
 ↓   redirect  
 show  
 
-
+---
 
 index  
 ↓   編集  
@@ -74,10 +74,13 @@ update(画面なし)
 ↓  
 show
 
-
+---
 
 index  
 ↓   削除  
 destroy(画面なし）  
 ↓   redirect  
 indexに戻る  
+
+
+---
