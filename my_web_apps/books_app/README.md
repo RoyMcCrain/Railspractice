@@ -168,4 +168,51 @@ HTMLとして、結果が表示される。
 
 ## new
 
-これか
+routes.rb  
+↓  
+books_controller.rb newアクション  
+↓  
+books/new.html.erb  
+
+### Controller
+
+BooksControllerのコード
+
+
+    def new
+        @book = Book.new
+    end
+
+`Book.new`でBookクラスのインスタンスを作り、`@book`インスタンス変数へ代入し、  
+Veiwへ渡す。
+
+
+---
+
+
+---
+
+## View
+
+コード
+
+    <h1>New Book</h1>  
+    <%= render 'form' %>  
+    <%= link_to 'Back', books_path %>  
+
+`<%= render 'form' %> `の内容は別ファイルに書かれている。  
+renderメソッドは別ファイルを埋め込みます。埋め込む用のviewファイルを*パーシャル*という。  
+
+---
+
+---
+
+#　疑問
+
+サイトには`<%= render 'form', book: @book %>`と書いてあり、  
+*<%= render '埋め込みたいファイル名', パーシャル内で使う変数名: 渡す変数 %>*  
+と書いてあるが、後半部分がなかった。しかし正常に動いているので仕様が変わった？  
+
+特にまだ不都合がないのでそのまま進める
+
+---
