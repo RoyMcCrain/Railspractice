@@ -60,7 +60,7 @@ index
 ↓   新規入力  
 new  
 ↓   新規登録  
-create(画面なし)
+create(画面なし)  
 ↓   redirect  
 show  
 
