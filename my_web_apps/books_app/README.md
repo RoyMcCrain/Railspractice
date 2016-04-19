@@ -120,5 +120,40 @@ BooksControllerのコード。
 def indexからendまでが、indexアクションになる。
 
 
-処理は
-'@book = Book.all'
+処理は`@books = Book.all`の部分で、＠booksはインスタンス変数  
+Bool.allはBookの全データが詰まった配列を取得すること。
+
+
+ここでのインスタンス変数名は本のデータが一つでも、複数形にするのが  
+慣習である。RailsやRubyでは変数の複数、単数の意識が大切である。
+
+
+---
+
+
+---
+
+## View
+
+    <% @books.each do |book| %>
+      <tr>
+        <td><%= book.title %></td>
+        <td><%= book.memo %></td>
+        <td><%= link_to 'Show', book %></td>
+        <td><%= link_to 'Edit', edit_book_path(book) %></td>
+        <td><%= link_to 'Destroy', book, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+    
+表示は`<% @books.each do |book| %>`から`<% end %>`で行う。
+
+@booksに二つのデータが入っていた場合、`@books.each`は全データを繰り返し処理を行う。  
+1回目の実行で、変数book(`|book|`の部分)に1冊目のデータが格納され、したの処理が行われ、  
+表示される。2回目では2冊目のデータが変数bookに同様に格納される。book
+
+
+index.html.erbはHTMLのテンプレートファイルなので`<%  %>`で囲まれたRubyコードは  
+HTMLとして、結果が表示される。
+
+
+---
