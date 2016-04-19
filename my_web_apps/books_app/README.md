@@ -120,3 +120,5 @@ BooksControllerのコード。
 def indexからendまでが、indexアクションになる。
 
 
+処理は
+'@book = Book.all'
