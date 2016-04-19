@@ -9,6 +9,8 @@ Rails version 4.2.0.beta2
 
 [CRUDの基礎とindexアクション](http://igarashikuniaki.net/rails_textbook/crud.html)
 
+[new,createアクション](http://igarashikuniaki.net/rails_textbook/new-create.html)  
+
 
 # メモ
 
@@ -157,3 +159,12 @@ HTMLとして、結果が表示される。
 
 
 ---
+
+
+# ここから[new,createアクション](http://igarashikuniaki.net/rails_textbook/new-create.html)
+
+
+---
+
+## new
+
