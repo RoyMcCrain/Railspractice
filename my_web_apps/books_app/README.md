@@ -84,3 +84,39 @@ indexに戻る
 
 
 ---
+
+
+
+---
+
+## Roust対応表
+
+Rails.application.routes.draw do
+
+~
+
+end
+
+の間に書く。
+
+---
+
+
+---
+
+## Controller
+
+    class BooksController < ApplicationController
+        ...
+        def index
+            @books = Book.all
+        end
+        
+        ...
+        
+class BooksController < ApplicationControllerからendまでが、  
+BooksControllerのコード。
+
+def indexからendまでが、indexアクションになる。
+
+
