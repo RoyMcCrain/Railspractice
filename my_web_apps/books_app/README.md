@@ -219,3 +219,62 @@ Rails4.2なのでこうなっているのかな。
 
 
 ---
+
+
+
+---
+
+## Createアクション
+
+リクエスト
+* URL:http//localhost:3000/books
+* HTTPメソッド:POST
+* パラメータ(Form data):
+    book[title]:（本のタイトル）
+    book[memo]:(本の説明)
+
+↓
+
+### Rails App
+
+Routes:routes.rb  
+↓  
+Controller:books_controller.rb  
+↓  
+View  
+
+↓
+
+レスポンス
+    HTML
+
+
+HTTPメソッド：POST
+    新規作成時に使う。他にサーバの状態へなんらかの変更を与える時。
+
+
+
+### Controller
+
+app/controllers/books_controller.rb
+
+    def create
+        @book = Book.new(book_params)
+
+        respond_to do |format|
+          if @book.save
+            format.html { redirect_to @book, notice: 'Book was successfully created.' }
+            format.json { render :show, status: :created, location: @book }
+          else
+            format.html { render :new }
+            format.json { render json: @book.errors, status: :unprocessable_entity }
+          end
+        end
+    end
+    
+    
+#### 行っている処理
+1. リクエストのパラメータを使って本のデータを作る
+2. 本のデータを保存する。
+3. 成功したらshow画面へ
+4. 保存失敗したらnew画面へ
